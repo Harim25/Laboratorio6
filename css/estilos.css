@@ -5,3 +5,8 @@
 .img{
     width: 400px;
 }
+
+.nav-link.active {
+    color: #ffffff;
+    background-color: #35c6e3;
+}
