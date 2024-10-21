@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body>
+<body> 
     <!-- Header -->
     <header class="bg-primary text-white text-center py-3">
         <h1>Laboratorio 6 Programacion Web - Pagina 1</h1>
@@ -46,7 +46,86 @@
 
     <!-- Main Content -->
     <div class="container mt-4 centro">
-        
+        <h1>Pagina 1</h1>
+        <p>Esta pagina se enfocara en el <strong>Basquetbol</strong></p>
+        <p>
+            El básquetbol o baloncesto es un deporte de equipo que se juega entre dos conjuntos de cinco jugadores cada uno. El objetivo es encestar una pelota en el aro del equipo contrario, 
+            que está colocado a una altura de 3.05 metros (10 pies) sobre el suelo, para anotar puntos. El equipo que logre más puntos al final del partido gana.  
+        </p>
+    </div>
+
+    <div class="container mt-4 centro">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Origen del Basquetbol
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>El baloncesto fue inventado en 1891 por James Naismith, un profesor de educación física
+                            canadiense, como una forma de mantener a los estudiantes activos en invierno.</p>
+                        <img src="imagenes/Dr.-James-Naismith.jpg"
+                            alt="Dr. James Naismith junto con un balón de baloncesto clásico">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        El Balón Oficial Actual
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>El balón de baloncesto mide entre 74.9 cm y 76.2 cm de circunferencia y debe pesar entre 567
+                            y 650 gramos. Está diseñado para un buen rebote y agarre.</p>
+                        <img src="imagenes/pelota-baloncesto.jpg" alt="pelota de basquetbol en la cancha">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Primera Liga Profesional
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>La primera liga profesional de baloncesto fue la National Basketball League (NBL) en 1898,
+                            que se formó en los Estados Unidos. A pesar de su corta duración, sentó las bases para las
+                            ligas futuras como la NBA.</p>
+                        <img class="img" src="imagenes/nbl.jpg" alt="poster de Charles Barkley">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-primary mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Conoce mas ...
+        </button>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                   Una pagina donde puedes consultar mas acerca de partidos y otras cosas de basquetbol es la pagina oficial de la NBA
+                   <br>
+                   <a href="https://www.nba.com/">NBA.com</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!-- Importamos JQuery v3.7.1 -->
